@@ -59,7 +59,7 @@ setInterval(async()=>{
 	{
 		$("#mintButton").html("Connect Wallet");
 	}
-}, 5000)
+}, 10000)
 
 ethereum.on("accountsChanged", async(accounts_)=>{
     location.reload();
