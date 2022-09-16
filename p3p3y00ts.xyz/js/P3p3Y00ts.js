@@ -42,7 +42,7 @@ const updateMintInfo = async() => {
 	
 	await connect();
 	const minted = parseInt(await Contract.totalSupply());
-    $("#minted").html(`${minted}`+"/6969 P3p3 Y00ts");
+    $("#minted").html(`${minted}`+"/10000 P3p3 Y00ts");
 	let userAddress = await getAddress();
 	let length = userAddress.length;
 	console.log("Connect");
@@ -52,7 +52,7 @@ setInterval(async()=>{
 	const addresses = await provider.listAccounts(); 
 	if(addresses.length != 0)
 	{
-		$("#mintButton").html("Mint P3p3 Y00ts");
+		$("#mintButton").html("Mint M3 Mutant");
 		await updateMintInfo();
 	}
 	else
